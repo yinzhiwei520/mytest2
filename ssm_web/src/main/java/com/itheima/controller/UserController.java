@@ -27,7 +27,6 @@ public class UserController {
     @RequestMapping(value = "/insert")
   public String sava(Itims itims)
   {
-      System.out.println(2);
       Integer inst = userService.inst(itims);
       System.out.println(inst);
       return "redirect:/items/findAll";
