@@ -12,7 +12,6 @@ import java.util.List;
 @Controller
 @RequestMapping(value = "/items")
 public class UserController {
-
     @Autowired
     private UserService userService;
 
@@ -28,7 +27,6 @@ public class UserController {
     @RequestMapping(value = "/insert")
   public String sava(Itims itims)
   {
-      System.out.println(1);
       Integer inst = userService.inst(itims);
       System.out.println(inst);
       return "redirect:/items/findAll";
